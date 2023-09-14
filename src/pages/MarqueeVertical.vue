@@ -1,7 +1,7 @@
 <template>
   <div class="row justify-center transparent">
     <div class="col-auto">
-      <Vue3Marquee :duration="55" pauseOnHover="true" :vertical="true">
+      <Vue3Marquee :duration="duration" pauseOnHover="true" :vertical="true">
         <q-card
           style="width: 95vw; max-width: 500px; border-radius: 25px;"
           class="q-pa-sm q-ma-md roundedBorders"
@@ -114,13 +114,21 @@
 
 <script setup>
 import { ref, onMounted, watch, computed } from "vue";
-import { useRouter } from "vue-router";
+import { useRoute } from "vue-router";
 import axios from "axios";
 import { Vue3Marquee } from "vue3-marquee";
 
-const router = useRouter();
+const router = useRoute();
 
 const marqueeItem = ref(1);
+
+const duration = computed(() => {
+  if (router.params.delay) {
+    return parseInt(router.params.delay)
+  } else {
+    return 55
+  }
+})
 
 const autoplay = ref(true);
 

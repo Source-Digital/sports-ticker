@@ -1,7 +1,7 @@
 <template>
   <div class="transparent">
     <div class="col q-pb-xs q-px-md">
-      <Vue3Marquee :duration="55" pauseOnHover="true">
+      <Vue3Marquee :duration="duration" pauseOnHover="true">
         <q-card
           style="border-radius: 15px"
           class="col-xs-auto q-px-xs q-ma-sm"
@@ -112,11 +112,19 @@
 
 <script setup>
 import { ref, onMounted, watch, computed } from "vue";
-import { useRouter } from "vue-router";
+import { useRoute } from "vue-router";
 import axios from "axios";
 import { Vue3Marquee } from "vue3-marquee";
 
-const router = useRouter();
+const router = useRoute();
+
+const duration = computed(() => {
+  if (router.params.delay) {
+    return parseInt(router.params.delay)
+  } else {
+    return 55
+  }
+})
 
 const marqueeItem = ref(1);
 
