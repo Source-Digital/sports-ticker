@@ -58,7 +58,7 @@
                           color="grey-2"
                           round
                           text-color="grey-9"
-                          icon="account_balance_wallet"
+                          icon="ondemand_video"
                         />
                       </div>
                     </div>
@@ -138,7 +138,7 @@ import { Vue3Marquee } from "vue3-marquee";
 
 const route = useRoute();
 
-const autoplayDelay = parseInt(route.params.delay)
+const autoplayDelay = parseInt(route.params.delay);
 
 const marqueeItem = ref(1);
 
@@ -275,7 +275,5 @@ const todaysEvents = ref([
   },
 ]);
 
-onMounted(() => {
-
-});
+onMounted(() => {});
 </script>

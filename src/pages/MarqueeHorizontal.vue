@@ -44,7 +44,7 @@
                     color="grey-2"
                     round
                     text-color="grey-9"
-                    icon="favorite_border"
+                    icon="ondemand_video"
                   />
                 </div>
               </div>
@@ -120,11 +120,11 @@ const router = useRoute();
 
 const duration = computed(() => {
   if (router.params.delay) {
-    return parseInt(router.params.delay)
+    return parseInt(router.params.delay);
   } else {
-    return 55
+    return 55;
   }
-})
+});
 
 const marqueeItem = ref(1);
 

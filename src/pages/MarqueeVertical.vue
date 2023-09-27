@@ -3,7 +3,7 @@
     <div class="col-auto">
       <Vue3Marquee :duration="duration" pauseOnHover="true" :vertical="true">
         <q-card
-          style="width: 95vw; max-width: 500px; border-radius: 25px;"
+          style="width: 95vw; max-width: 500px; border-radius: 25px"
           class="q-pa-sm q-ma-md roundedBorders"
           v-for="event in todaysEvents"
           :key="event.id"
@@ -44,14 +44,14 @@
                     color="grey-2"
                     round
                     text-color="grey-9"
-                    icon="favorite_border"
+                    icon="ondemand_video"
                   />
                 </div>
               </div>
             </div>
             <div class="col-auto q-mx-xs"></div>
           </div>
-          <div class="row no-wrap q-ma-xs q-pa-none justify-around" >
+          <div class="row no-wrap q-ma-xs q-pa-none justify-around">
             <q-btn flat rounded class="bg-white col-auto">
               <div class="row no-wrap items-center">
                 <q-avatar class="q-mr-xs" size="25px">
@@ -108,8 +108,8 @@
           </div>
         </q-card>
       </Vue3Marquee>
-      </div>
     </div>
+  </div>
 </template>
 
 <script setup>
@@ -124,11 +124,11 @@ const marqueeItem = ref(1);
 
 const duration = computed(() => {
   if (router.params.delay) {
-    return parseInt(router.params.delay)
+    return parseInt(router.params.delay);
   } else {
-    return 55
+    return 55;
   }
-})
+});
 
 const autoplay = ref(true);
 
@@ -229,7 +229,7 @@ const todaysEvents = ref([
     teamOneLine: "-170",
     teamTwoLine: "+143",
   },
-    {
+  {
     id: 7,
     name: "NBA Indiana Pacers vs Memphis Grizzlies",
     location: "FedExForum, Memphis, TN",
@@ -245,7 +245,7 @@ const todaysEvents = ref([
     teamOneLine: "+285",
     teamTwoLine: "-365",
   },
-    {
+  {
     id: 8,
     name: "NBA Utah Jazz vs Los Angeles Clippers",
     location: "SimpliFi Arena, Honolulu, HI",
@@ -263,8 +263,5 @@ const todaysEvents = ref([
   },
 ]);
 
-onMounted(() => {
-
-});
+onMounted(() => {});
 </script>
-
