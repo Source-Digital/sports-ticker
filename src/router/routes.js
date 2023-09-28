@@ -4,7 +4,10 @@ const routes = [
     component: () => import("layouts/MainLayout.vue"),
     children: [
       { path: "", component: () => import("src/pages/MarqueeHorizontal.vue") },
-      { path: "/:delay", component: () => import("src/pages/MarqueeHorizontal.vue") },
+      {
+        path: "/:delay",
+        component: () => import("src/pages/MarqueeHorizontal.vue"),
+      },
       {
         path: "carousel/:delay",
         component: () => import("src/pages/CarouselView.vue"),
@@ -16,7 +19,15 @@ const routes = [
       {
         path: "vertical/:delay",
         component: () => import("src/pages/MarqueeVertical.vue"),
-      }
+      },
+      {
+        path: "scores",
+        component: () => import("src/pages/MarqueeScores.vue"),
+      },
+      {
+        path: "scores/:delay",
+        component: () => import("src/pages/MarqueeScores.vue"),
+      },
     ],
   },
 
