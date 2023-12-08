@@ -21,7 +21,7 @@
               <div class="row q-px-sm">
                 <div class="col">
                   <q-img
-                    src="http://www.attbyronnelson.org/wp-content/uploads/2020/11/BN_Golfer-768x389.png"
+                    src="https://storage.googleapis.com/source-uploads-production/uploads/BN_Golfer_768x389_82b2dcf3f3/BN_Golfer_768x389_82b2dcf3f3.png"
                     :ratio="16 / 9"
                     style="max-height: 200px; border-radius: 15px"
                     spinner-color="primary"
@@ -99,7 +99,7 @@
                               <div class="row">
                                 <div class="col">
                                   <q-img
-                                    src="http://www.attbyronnelson.org/wp-content/uploads/2020/11/BN_Golfer-768x389.png"
+                                    src="https://storage.googleapis.com/source-uploads-production/uploads/BN_Golfer_768x389_82b2dcf3f3/BN_Golfer_768x389_82b2dcf3f3.png"
                                     :ratio="16 / 9"
                                     style="
                                       max-height: 200px;
@@ -289,7 +289,7 @@
                                 <div class="row">
                                   <div class="col">
                                     <q-img
-                                      src="http://www.attbyronnelson.org/wp-content/uploads/2020/11/BN_Golfer-768x389.png"
+                                      src="https://storage.googleapis.com/source-uploads-production/uploads/BN_Golfer_768x389_82b2dcf3f3/BN_Golfer_768x389_82b2dcf3f3.png"
                                       :ratio="16 / 9"
                                       style="
                                         max-height: 200px;
@@ -546,7 +546,7 @@
               <div class="row">
                 <div class="col">
                   <q-img
-                    src="http://www.attbyronnelson.org/wp-content/uploads/2020/11/BN_Golfer-768x389.png"
+                    src="https://storage.googleapis.com/source-uploads-production/uploads/BN_Golfer_768x389_82b2dcf3f3/BN_Golfer_768x389_82b2dcf3f3.png"
                     :ratio="16 / 9"
                     style="max-height: 200px; border-radius: 15px"
                     spinner-color="primary"
